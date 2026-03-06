@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+env/
+venv/
+ds_env/
+
+# VS Code
+.vscode/
+
+# Model files
+*.pkl
+*.joblib
+
+# Large generated datasets
+X_train.csv
+X_test.csv
+y_train.csv
+y_test.csv
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
