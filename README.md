@@ -1,125 +1,137 @@
-##🏠 Advanced House Price Prediction
-📌 Project Overview
+# 🏠 Advanced House Price Prediction
 
-This project predicts house prices using advanced machine learning and feature engineering techniques. The dataset contains multiple housing attributes such as property size, location features, and construction details.
+## 📌 Project Overview
 
-The goal is to build a robust regression model that can accurately predict the SalePrice of houses by performing:
+This project predicts **house prices using advanced machine learning and feature engineering techniques**.  
+The dataset contains multiple housing attributes such as **property size, location features, and construction details**.
 
-Data cleaning
+The goal is to build a **robust regression model** that accurately predicts the **SalePrice** of houses by performing:
 
-Exploratory Data Analysis (EDA)
+- **Data Cleaning**
+- **Exploratory Data Analysis (EDA)**
+- **Feature Engineering**
+- **Feature Selection**
+- **Machine Learning Modeling**
 
-Feature engineering
+This project demonstrates an **end-to-end data science pipeline used in real-world predictive modeling.**
 
-Feature selection
+---
 
-Machine learning modeling
+# 🏗️ Project Architecture
 
-This project demonstrates an end-to-end data science pipeline used in real-world predictive modeling.
 
-🏗️ Project Architecture
 Raw Data (train.csv, test.csv)
-        │
-        ▼
+│
+▼
 Exploratory Data Analysis
-        │
-        ▼
+│
+▼
 Data Cleaning
 (Missing Value Handling)
-        │
-        ▼
+│
+▼
 Feature Engineering
 (Encoding, Transformations)
-        │
-        ▼
+│
+▼
 Feature Selection
 (Lasso Regression)
-        │
-        ▼
+│
+▼
 Model Training
 (Regression Models)
-        │
-        ▼
+│
+▼
 Model Evaluation
 (RMSE / R² Score)
-        │
-        ▼
+│
+▼
 Final Prediction Model
-📂 Project Structure
+
+
+---
+
+# 📂 Project Structure
+
+
 Advanced-House-Price-Prediction
 │
 ├── data
-│   ├── train.csv
-│   ├── test.csv
-│   └── X_train.csv
+│ ├── train.csv
+│ ├── test.csv
+│ └── X_train.csv
 │
 ├── notebooks
-│   ├── Exploratory Data Analysis.ipynb
-│   ├── Feature Engineering.ipynb
-│   └── Feature Selection.ipynb
+│ ├── Exploratory Data Analysis.ipynb
+│ ├── Feature Engineering.ipynb
+│ └── Feature Selection.ipynb
 │
 ├── outputs
-│   ├── selected_features.csv
-│   └── trained_model.pkl
+│ ├── selected_features.csv
+│ └── trained_model.pkl
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-📊 Dataset
 
-The dataset is taken from the Kaggle House Prices Competition.
+
+---
+
+# 📊 Dataset
+
+The dataset is taken from the **Kaggle House Prices Competition**.
 
 It contains:
 
-79 explanatory variables
+- **79 explanatory variables**
+- Residential homes located in **Ames, Iowa**
 
-Residential homes located in Ames, Iowa
+### 🎯 Target Variable
 
-Target Variable
-SalePrice
+**SalePrice**
 
-This variable represents the final selling price of the house.
+This variable represents the **final selling price of the house.**
 
-🔍 Exploratory Data Analysis (EDA)
+---
 
-EDA was performed to understand the structure and distribution of the dataset.
+# 🔍 Exploratory Data Analysis (EDA)
+
+EDA was performed to understand the **structure and distribution of the dataset.**
 
 Key steps include:
 
-Checking dataset shape and data types
+- Checking **dataset shape and data types**
+- Identifying **missing values**
+- **Distribution analysis** of numerical features
+- **Correlation analysis**
+- Detecting **outliers**
 
-Identifying missing values
+---
 
-Distribution analysis of numerical features
+# ⚙️ Feature Engineering
 
-Correlation analysis
-
-Detecting outliers
-
-⚙️ Feature Engineering
-
-Feature engineering improves model performance by transforming raw variables.
+Feature engineering improves **model performance by transforming raw variables.**
 
 Techniques applied:
 
-Missing value imputation
+- Missing value **imputation**
+- **Rare category handling**
+- **Label encoding**
+- **Log transformation** for skewed variables
 
-Rare category handling
+---
 
-Label encoding
+# 🎯 Feature Selection
 
-Log transformation for skewed variables
+Feature selection was performed to **reduce dimensionality and keep only important predictors.**
 
-🎯 Feature Selection
+**Method Used**
 
-Feature selection was performed to reduce dimensionality and keep only the most important predictors.
-
-Method used:
-
-Lasso Regression + SelectFromModel
+- **Lasso Regression + SelectFromModel**
 
 Example:
 
+```python
 from sklearn.linear_model import Lasso
 from sklearn.feature_selection import SelectFromModel
 
@@ -141,7 +153,7 @@ Gradient Boosting Regressor
 
 📈 Model Evaluation Metrics
 
-Model performance is evaluated using regression metrics:
+Model performance is evaluated using:
 
 RMSE (Root Mean Squared Error)
 
@@ -160,7 +172,7 @@ Scikit-learn	Machine learning
 Matplotlib	Data visualization
 Seaborn	Statistical visualization
 Jupyter Notebook	Development environment
-
+🚀 Project Workflow
 
 1️⃣ Exploratory Data Analysis
 2️⃣ Feature Engineering
@@ -182,7 +194,6 @@ Feature selection using Lasso
 Regression model development
 
 End-to-end machine learning workflow
-
 
 👩‍💻 Author
 
